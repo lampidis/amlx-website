@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partners & Customers - AMLX</title>
+    <meta
+      name="description"
+      content="Partner with AMLX to explore safety-focused machine learning pilots for infrastructure, industry, and operational environments."
+    />
+    <link rel="icon" href="assets/amlx-logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="AMLX home">
+        <span class="brand__matte">
+          <img src="assets/amlx-logo.png" alt="AMLX" />
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About us</a>
+        <a class="is-active" href="partners.html">Partners</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="mobile-partner-link is-active" href="partners.html">Partners</a>
+    </header>
+
+    <main>
+      <section class="subhero" aria-labelledby="partners-title">
+        <div class="subhero__media" data-subhero-media></div>
+        <div class="subhero__shade"></div>
+        <div class="section__inner subhero__content">
+          <p class="eyebrow" data-reveal>Partners and customers</p>
+          <h1 id="partners-title" data-reveal>Validate safety-focused ML before you scale it.</h1>
+          <p data-reveal>
+            We help infrastructure, industry, and safety teams move from a high-risk operational
+            question to a grounded pilot with measurable next steps.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--partner-fit" aria-labelledby="fit-title">
+        <div class="section__inner">
+          <div class="section__heading" data-reveal>
+            <p class="eyebrow">Who this is for</p>
+            <h2 id="fit-title">A focused path for teams with real systems and real stakes.</h2>
+          </div>
+
+          <div class="fit-grid">
+            <article class="fit-panel" data-reveal>
+              <h3>For partners</h3>
+              <p>
+                Co-develop an applied ML pilot around safety, monitoring, sensor fusion, or field
+                validation where your domain expertise shapes the system.
+              </p>
+            </article>
+            <article class="fit-panel" data-reveal>
+              <h3>For customers</h3>
+              <p>
+                Turn operational data into a practical decision-support tool that helps teams see
+                risk earlier and act with more confidence.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="section__inner contact-grid">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Contact us</p>
+            <h2 id="contact-title">Tell us what needs to become safer, clearer, or easier to decide.</h2>
+            <p>
+              Share the system, the risk, and the data you already have. AMLX can help shape the
+              first experiment, pilot scope, and validation route.
+            </p>
+          </div>
+
+          <form class="contact-form" data-contact-form action="mailto:t.vanheuvelen@amlx.nl" method="post" enctype="text/plain" data-reveal>
+            <label>
+              <span>Name*</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+
+            <label>
+              <span>Email*</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+
+            <label>
+              <span>Organization</span>
+              <input name="organization" type="text" autocomplete="organization" />
+            </label>
+
+            <label>
+              <span>Request type</span>
+              <select name="requestType">
+                <option>Partnership</option>
+                <option>Customer project</option>
+                <option>Pilot exploration</option>
+                <option>General question</option>
+              </select>
+            </label>
+
+            <label class="form-full">
+              <span>Message*</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+
+            <label class="consent form-full">
+              <input name="consent" type="checkbox" required />
+              <span>I agree that this data can be used for the purpose of contacting me.</span>
+            </label>
+
+            <button class="button button--primary form-full" type="submit">
+              Send request
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <p class="form-status form-full" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__inner">
+        <p>KVK: 42017816</p>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About us</a>
+          <a href="partners.html">Partners & Customers</a>
+          <a href="https://amlx.nl/wp-content/uploads/go-x/u/ba1bdc76-27a0-4591-be7f-040c24e2b5a5/AMLX-general-terms-and-conditions.pdf">General terms and conditions</a>
+        </nav>
+        <p>AMLX © 2026</p>
+      </div>
+    </footer>
+
+    <script src="script.js?v=4"></script>
+  </body>
+</html>
