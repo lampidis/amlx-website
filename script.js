@@ -69,17 +69,15 @@ if (contactForm) {
     const name = formData.get("name") || "";
     const email = formData.get("email") || "";
     const organization = formData.get("organization") || "";
-    const requestType = formData.get("requestType") || "General question";
     const message = formData.get("message") || "";
     const status = contactForm.querySelector("[data-form-status]");
 
-    const subject = encodeURIComponent(`AMLX ${requestType} request from ${organization || name}`);
+    const subject = encodeURIComponent(`AMLX partnership request from ${organization || name}`);
     const body = encodeURIComponent(
       [
         `Name: ${name}`,
         `Email: ${email}`,
         `Organization: ${organization}`,
-        `Request type: ${requestType}`,
         "",
         message,
       ].join("\n")
